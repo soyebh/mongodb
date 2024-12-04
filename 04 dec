@@ -1,0 +1,113 @@
+// Qno.1 Insert a student document into the students collection in the school database with
+// fields: name, age, grade, and subjects
+// use school
+// db.createCollection("Students")
+// db.Students.insertMany([
+//     ... {name:'rashid',age:18,grade:'A+',subjects:{english:'B',urdu:'A+',}}
+//     ... ,{name:'shahid',age:21,grade:'b+',subjects:{english:'B',urdu:'b',}},
+//     ... {name:'kaif',age:20,grade:'c',subjects:{english:'f',urdu:'c',}}])
+
+// 2. Insert a product into the products collection in the store database with fields: name,
+// price, category, and stock.
+// use store
+
+//         //db.createCollection("Products")
+//         db.Products.insertMany([
+//              {ProductName: 'Samsung Galaxy S21 Ultra', Price: 90000, Category: 'Mobile', Stock: 5 },
+//          { ProductName: 'Redmi Note 10 Pro', Price: 60000, Category: 'Mobile', Stock: 10 },
+//             { ProductName: 'Apple iWatch Series 6', Price: 25000, Category: 'Watch', Stock: 7 },
+//             { ProductName: 'Nokia 8', Price: 30000, Category: 'Mobile', Stock: 2 }
+//         ])  
+
+// db.Products.insertMany([ { ProductName: 'IPHONE 15 PRO MAX', Price: 140000, Category: 'Mobile', Stock: 3 }, 
+//     { ProductName: 'zebronics Speaker', Price: 600, Category: 'speaker', Stock: 8 }])
+
+// 3. Insert a book into the books collection in the library database with fields: title,
+// author, genre, and publishedYear.
+// use liberary
+
+// db.createCollection("Books")
+
+//  db.Books.insertMany([{title:"Ghazal", author:"Mirza Ghalib",genre:"Ghazal", publishedYear:1850},
+//    {title:"The Great Gatsby", author:"F. Scott Fitzgerald", genre:"Fiction", publishedYear:1925},
+//     {title:"To Kill a Mockingbird", author:"Harper Lee", genre:"Fiction", publishedYear:1960}])
+
+//  4.Insert a patient's information into the patients collection in the hospital database
+//  with fields: name, age, disease, and admitted date
+// use hospital
+
+// db.createCollection("Patients")
+// db.Patients.insertMany([{name:"zaid",age: 25,disease: "Heart disease",admitted_date: Date("2023-12-03")},
+//     {name: "Rashid Khan",age: 18,disease: "Diabetes",admitted_date: Date("2023-12-01")},
+//     {name: "Ahmed Khan",age: 45,disease: "Hypertension",admitted_date:Date("2023-12-04") }
+// ])
+
+// 5.Insert a movie into the films collection in the movies database with fields: title,
+// director, rating, and genre
+// use movie
+// db.createCollection("movies")
+
+// db.movies.insertMany([
+//     {title: "Avengers Endgame", director: "Anurag Kashyap", rating: 9.2, genre: "Action, Adventure, Sci-Fi" },
+//     { title: "The Shawshank Redemption", director: "Frank Darabont", rating: 9.3, genre: "Crime, Drama" }])
+
+// 6.Insert a player's details into the players collection in the sports database with fields:
+// name, sport, team and age
+
+// use sports
+// db.createCollection("players")
+
+// db.players.insertMany([
+//     {name: "Ronaldo", sport: "Football", team: "Barcelona", age: 32},
+//     {name: "Messi", sport: "Basketball", team: "Real Madrid", age: 31},
+//     {name: "Cristiano Ronaldo", sport: "Football", team: "Juventus", age: 30}])
+
+
+//7. Insert a travel package into the packages collection in the travel database with
+// fields: destination, price, duration, and activities.
+// use travel
+
+// db.createCollection("travelpackages")
+// db.travelpackages.insertMany([ { destination: 'mumbai', price: 2000, duration: '1days with Night stay', activities: 'free breakfast' },
+//      { destination: 'dehradun', price: 3000, duration: '1days with Night stay', activities: 'free breakfast' }])
+
+//8.Insert a user's post into the posts collection in the
+// social database with fields: user content likes and comments
+
+// use social
+// db.createCollection("posts")
+
+// db.posts.insertMany([ { user: 'John Doe', content: 'I love this new design', likes: 10, comments: ['Great design!', 'Nice colors'] },
+//      { user: 'Jane Smith', content: 'This is the best product ever!', likes: 5, comments: ['Excellent!', 'I can\'t wait to try it'] }])
+
+
+
+//9.Insert a transaction into the transactions collection in the bank database with fields:
+//accountNumber, amount, type, and date.
+
+// use bank
+// db.createCollection('transactions')
+
+// db.transactions.insertMany([
+//     { accountNumber: '1234567890', amount: 5000, type: 'deposit', date:  Date('2023-12-01') },
+//     { accountNumber: '9876543210', amount: 2000, type: 'withdrawal', date:  Date('2023-12-03') }])
+
+//10. insert course into course collection in the university database with
+// fields: name, credits, professor, and semester.
+
+// use university
+
+// db.createCollection('courses')
+
+// db.courses.insertMany([
+//     { name: 'Computer Science', credits: 4, professor: 'John Doe', semester: 1 },
+//     { name: 'Mathematics', credits: 3, professor: 'Jane Smith', semester: 2 }])
+
+
+
+
+// 11.Find all books in the books collection of the library database with the genre
+// "Fiction".
+
+// use liberary
+// db.Books.find({genre:'Fiction'})
