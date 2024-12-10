@@ -1,0 +1,57 @@
+//. Find all students in the students collection whose age is greater than 18
+// db.Students.find({age:{$gt:18}})
+
+
+// . Retrieve all books in the books collection published after the year 2000
+// db.Books.find({publishedYear:{$gt:2000}})
+
+
+// . Find all products in the products collection with a price less than or equal to $100
+// db.Products.find({price:{$lte:8000}})
+
+
+// . Retrieve all movies in the films collection with a rating equal to 9
+// db.films.find({rating:{$eq:9}})
+
+// Find all transactions in the transactions collection where the amount is not equal to
+// $500
+// db.transactions.find({amount:{$ne:12299}})
+
+
+// Find all products in the products collection that are either in the Electronics
+// category or priced below 50
+// db.Products.find({$and:[{Category:'Electronics'},{Price:{$lt:50}}]})      
+
+
+// Retrieve all students in the students collection who are in grade 10 and older than 15
+// db.Students.find({$and:[{grade:{$eq:10}},{grade:{$lt:15}}]})
+
+
+// Find all movies in the films collection that are not in the Horror genre
+// db.films.find({genre:{$ne:'horroe'}})
+// db.films.find({$nor:[{genre:'horror'}]})
+
+// Find all patients in the patients collection who are either above 50 years old or have
+// been admitted after 2023-01-01.
+// db.Patients.find({$or:[{age:{$gt:50}},{date:{$eq:2323-01-01}}]}) 
+
+
+// Find all posts in the posts collection where the likes field exists.
+
+// db.posts.find({likes:{$exists:true}})
+
+
+
+// . Find all books in the books collection where the publishedYear field exists and is of
+// type number
+
+// db.Books.find({publishedYear:{$exists:true,$type:16}})
+
+
+
+
+
+
+
+
+
